@@ -30,7 +30,7 @@ Before running this script, ensure that you have the following:
 
 5. Run the script using the following command:
    ```
-   python3 queryAddresses.py
+   python3 queryWallets.py
    ```
 
 6. The script will retrieve all wallet addresses on the blockchain and randomly select 10 addresses.
