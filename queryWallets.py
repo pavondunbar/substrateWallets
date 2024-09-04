@@ -39,11 +39,11 @@ highest_balance = 0
 highest_balance_address = None
 
 # Print the selected wallet addresses and their balances
-print("Randomly selected wallet addresses and their balances in AGC:\n") # Replce AGC with the symbol of the native token
+print("Randomly selected wallet addresses and their balances in AGC:\n") # Replace AGC with the symbol of the native token
 for address in selected_addresses:
     balance = get_wallet_balance(address)
     if balance is not None:
-        print(f"Address: {address}, Balance: {balance:.6f} AGC") # Replce AGC with the symbol of the native token
+        print(f"Address: {address}, Balance: {balance:.6f} AGC") # Replace AGC with the symbol of the native token
         if balance > highest_balance:
             highest_balance = balance
             highest_balance_address = address
@@ -53,4 +53,4 @@ for address in selected_addresses:
 # Highlight the wallet with the highest balance
 if highest_balance_address:
     print("\n\033[1;32mWallet with the highest balance:\033[0m")
-    print(f"\033[1;33mAddress: {highest_balance_address}, Balance: {highest_balance:.6f} AGC\033[0m") # Replce AGC with the symbol of the native token
+    print(f"\033[1;33mAddress: {highest_balance_address}, Balance: {highest_balance:.6f} AGC\033[0m") # Replace AGC with the symbol of the native token
